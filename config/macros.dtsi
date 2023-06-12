@@ -1,35 +1,3 @@
-macro_macro_switchero: macro_macro_switchero{
-compatible = "zmk,behavior-macro";
-label = "macro_macro_switchero";
-wait-ms = <50>;
-tap-ms = <50>;
-#binding-cells = <0>;
-bindings
-    = <&macro_press   &kp LEFT_SHIFT>
-    , <&macro_press   &kp LEFT_CONTROL>
-    , <&macro_press   &kp LEFT_ALT>
-    , <&macro_tap     &kp PERIOD>
-    , <&macro_release &kp LEFT_SHIFT>
-    , <&macro_release &kp LEFT_CONTROL>
-    , <&macro_release &kp LEFT_ALT>
-    ;
-};
-
-macro_macro_ditto: macro_macro_ditto{
-compatible = "zmk,behavior-macro";
-label = "macro_macro_ditto";
-wait-ms = <50>;
-tap-ms = <50>;
-#binding-cells = <0>;
-bindings
-    = <&macro_press   &kp LEFT_CONTROL>
-    , <&macro_press   &kp LEFT_SHIFT>
-    , <&macro_tap     &kp V>
-    , <&macro_release &kp LEFT_CONTROL>
-    , <&macro_release &kp LEFT_SHIFT>
-    ;
-};
-
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
